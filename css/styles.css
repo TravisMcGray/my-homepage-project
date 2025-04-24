@@ -1,22 +1,25 @@
 body {
     font-family: "Open Sans", sans-serif;
+    color: #CEC8FF;
+    background-image: linear-gradient(to top, #ffb01e, #108cdf, #09d0f3);
 }
 
 .navbar {
-    background-color: #901CAD;
+    background-color: #05194e;
+    border: 3px solid #a852f8;
 }
 
 h1, h2, h3 {
    font-family: "Lobster", cursive;
 }
 
-h2 {
-   color: #3046C5;
+.nucamp, .bettercamp {
+   color: #fdfdfd;
 }
 
 header {
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to top, #9c7428, #ec7f19, #f79a0f);
     color: white;
 }
 
@@ -25,7 +28,7 @@ header h2 {
 }
 
 footer {
-    background-image:linear-gradient(#CEC8FF,white);
+    background-image:linear-gradient(to bottom,#4e65e6, #072f36);
     padding: 20px 0;
 }
 
@@ -36,13 +39,42 @@ footer {
 }
 
 .accordion-button {
-    background-color: #d3d3d3;
+    background-color: #0888f0;
 }
 
 .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5)
+    background-color: rgba(19, 193, 247, 0.5)
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid #5838e9;
+}
+
+.links {
+    color: #CEC8FF;
+}
+
+.footer-links a {
+    color: #CEC8FF;
+}
+
+.social {
+    color: #CEC8FF;
+}
+
+.footer-icon a {
+    color: #CEC8FF;
+}
+
+.footer-contact i {
+    color: #CEC8FF; 
+    transition: color 0.3s ease;
+}
+
+.fa-phone:hover {
+    color: #f3a109; 
+}
+
+.fa-envelope:hover {
+    color: #00d4ff; 
 }
