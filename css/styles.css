@@ -1,36 +1,31 @@
 body {
     font-family: "Open Sans", sans-serif;
-    color: #ffffff;
-    background-image: linear-gradient(to top, #108cdf, #CEC8FF);
 }
 
 .navbar {
-    background-color: #05194e;
-    border: 3px solid #a852f8;
+    background-color: #901CAD;
 }
 
 h1, h2, h3 {
    font-family: "Lobster", cursive;
-   color: #ffffff
 }
 
-.nucamp, .bettercamp {
-   color: #fdfdfd;
+h2 {
+   color: #3046C5;
 }
 
 header {
     padding: 30px;
-    background-image: linear-gradient(to top, #9c7428, #ec7f19, #f79a0f);
-    color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    color: white;
 }
 
-header, h2 {
-    color: #fffefe;
+header h2 {
+    color: #CEC8FF;
 }
-
 
 footer {
-    background-image:linear-gradient(to bottom,#4e65e6, #072f36);
+    background-image:linear-gradient(#CEC8FF,white);
     padding: 20px 0;
 }
 
@@ -41,76 +36,13 @@ footer {
 }
 
 .accordion-button {
-    background-color: #0888f0;
+    background-color: #d3d3d3;
 }
 
 .carousel-caption {
-    background-color: rgba(1, 24, 31, 0.5);
-    border-radius: 10px;
-    padding: 10px;
-    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5)
 }
 
 .carousel {
-    border: solid #ffffff 5px;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.card {
-    background-color: #ffffff;
-    border: 3px solid #9115f7;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.card-header {
-    background-color: #05194e;
-}
-
-.form-control:focus {
-    border: 3px solid #f79a0f;
-    outline: solid;
-}
-
-
-.card-body {
-    background-color: #05194e;
-}
-
-.links {
-    color: #ffffff;
-}
-
-.footer-links a {
-    color: #f79a0f;
-}
-
-.footer-links a:hover {
-    color: #00d4ff;
-}
-
-.footer-icon a :hover {
-    color: #00d4ff;
-}
-
-.social {
-    color: #ffffff;
-}
-
-.footer-icon a {
-    color: #f79a0f;
-}
-
-.footer-contact i {
-    color: #f79a0f; 
-    transition: color 0.3s ease;
-}
-
-.fa-phone:hover {
-    color: #00d4ff; 
-}
-
-.fa-envelope:hover {
-    color: #00d4ff; 
+    border: solid #5637DD;
 }
