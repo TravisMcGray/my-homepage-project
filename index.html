@@ -34,7 +34,7 @@
             </div>
 
             <div class="col-md-4 col-xl-2 mt-4">
-                <a href="#reserveForm" class="btn btn-info text-white order-sm-last text-nowrap">Reserve Campsite</a>
+                <button class="btn btn-info text-white order-sm-last text-nowrap" data-bs-toggle="modal" data-bs-target="#reserveModal">Reserve Campsite</button>
             </div>
         </div>
     </div>
@@ -102,6 +102,51 @@
         </div>
     </div>
 </div>
+
+<!-- Reserve modal -->
+ <div class="modal fade" id="reserveModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h3 class="modal-title">Reserve a Campsite</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body"></div>
+                <div class="container-fluid">
+                    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">                        <div class="row mb-3">
+                            <label for="numberofcampers" class="col-12 col-sm-6 col-form-label">Number of Campers</label>
+                            <div class="col-12 col-sm-6">
+                                <select class="form-control" id="numberofcampers" name="numberofcampers">
+                                    <option>Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                        </div>  
+    
+                        <div class="row mb-3">
+                            <label for="date" class="col-12 col-sm-6 col-form-label">Date</label>
+                            <div class="col-12 col-sm-6">
+                                <input type="date" class="form-control" id="date" name="date" placeholder="Select a date">
+                            </div>
+                        </div>
+    
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <button type="submit" id="reserveForm" class="btn btn-dark" data-bs-dismiss="modal">cancel</button>
+                                <button type="submit" id="reserveForm" class="btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
 
 <!-- main section -->
 <main class="container">
@@ -199,47 +244,6 @@
             </div>
         </div>
     </section>
-
-    <!-- form section -->
-    <section class="row row-content align-items-center">
-        <div class="col-sm-9 mx-auto">
-            <div class="card">
-                <h3 class="card-header bg-info text-white">Reserve a campsite</h3>
-                <div class="card-body">
-                    <form>
-                        <div class="row mb-3">
-                            <label for="numberofcampers" class="col-12 col-sm-6 col-form-label">Number of Campers</label>
-                            <div class="col-12 col-sm-6">
-                                <select class="form-control" id="numberofcampers" name="numberofcampers">
-                                    <option>Select</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                </select>
-                            </div>
-                        </div>  
-
-                        <div class="row mb-3">
-                            <label for="date" class="col-12 col-sm-6 col-form-label">Date</label>
-                            <div class="col-12 col-sm-6">
-                                <input type="date" class="form-control" id="date" name="date" placeholder="Select a date">
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <button type="submit" id="reserveForm" class="btn btn-primary">Search</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>    
-            </div>
-        </div>    
-    </section>
-
 </main>
          
          <!-- footer -->
